@@ -33,6 +33,22 @@ Smallsh handles the following signals:
 
 ## Implementation Details
 
+### Includes
+
+Smallsh includes the following header files to access various C standard library functions and system calls:
+
+- `<stdlib.h>`: General utilities, such as memory allocation and conversion functions.
+- `<stdio.h>`: Input and output functions, including file I/O operations.
+- `<err.h>`: Error reporting functions for program diagnostics.
+- `<errno.h>`: Error handling macros and variables.
+- `<unistd.h>`: POSIX operating system API functions, including process management and system calls.
+- `<ctype.h>`: Character classification and conversion functions.
+- `<string.h>`: String manipulation functions.
+- `<sys/wait.h>`: Process management functions, including process creation and waiting.
+- `<fcntl.h>`: File control options and functions, including file descriptor manipulation.
+- `<stdbool.h>`: Boolean data type and values.
+- `<signal.h>`: Signal handling functions and macros.
+
 ### Word Splitting
 
 Smallsh splits input lines into words, recognizing whitespace as delimiters. It also supports comments indicated by `#` at the beginning of a word and backslash escapes.
